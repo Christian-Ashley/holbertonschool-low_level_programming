@@ -3,21 +3,20 @@
 /**
  * main - Entry point
  *
- *Description: uses c to print the size of various types of characters
- *
  * Return: Always 0 (Success)
  */
-
 int main(void)
 {
-int intType;
-float floatType;
-double doubleType;
-char charType;
+	int charSize = sizeof(char);
+	int intSize = sizeof(int);
+	int longSize = sizeof(long int);
+	int longlongSize = sizeof(long long int);
+	int floatSize = sizeof(float);
 
-printf("Size of int: %zu bytes\n", sizeof(intType));
-printf("Size of int: %zu bytes\n", sizeof(floatType));
-printf("Size of int: %zu bytes\n", sizeof(doubleType));
-printf("Size of int: %zu bytes\n", sizeof(charType));
-return (0);
+	printf("Size of a char:%d byte(s)\n", charSize);
+	printf("Size of an int:%d byte(s)\n", intSize);
+	printf("Size of a long int:%d byte(s)\n", longSize);
+	printf("Size of a long long int:%d byte(s)\n", longlongSize);
+	printf("Size of a float:%d byte(s)\n", floatSize);
+	return (0);)
 }

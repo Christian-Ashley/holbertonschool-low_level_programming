@@ -10,9 +10,7 @@ int main(void)
 {
 	for (int x = 'a'; x <= 'z'; x++)
 	{
-		int lower_x = tolower(x);
-
-		putchar(x);
+	putchar(x);
 	}
 	return (0);
 }

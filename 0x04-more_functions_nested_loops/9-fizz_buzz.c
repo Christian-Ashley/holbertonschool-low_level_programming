@@ -1,10 +1,8 @@
-#include <stdio.h>
 #include "main.h"
+#include <stdio.h>
 
 /**
- * main - Entry point
- *
- * Description: fizzbuzz
+ * main - Writes 1 - 100, Replace % 3 with Fizz and 5 with Buzz.
  *
  * Return: void
  */
@@ -17,22 +15,26 @@ int main(void)
 
 	while (x <= 100)
 	{
-		if (x % 3 == 0)
-		{
-			printf("Fizz");
-			(x++);
-		}
-		else if (x % 5 == 0)
-		{
-			printf("Buzz");
-			(x++);
-		}
-		else if (x % 3 == 0 && x % 5 == 0)
+		if ((x % 3 == 0) && (x % 5 == 0))
 		{
 			printf("FizzBuzz");
 			(x++);
 		}
-		else if (x % 3 != 0 && x % 5 != 0)
+		else if ((x % 3 == 0) && (x % 5 != 0))
+		{
+			printf("Fizz");
+			(x++);
+		}
+		else if ((x % 5 == 0) && (x % 3 != 0))
+		{
+			printf("Buzz");
+			(x++);
+		}
+		else if (x > 100)
+		{
+			break;
+		}
+		else
 		{
 			printf("%d", x);
 			(x++);

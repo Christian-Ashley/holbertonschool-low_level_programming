@@ -2,6 +2,7 @@
 #ifndef _PUTCHAR
 #define _PUTCHAR
 
+void print_triangle(int size);
 void fizzbuzzer(void);
 void print_square(int size);
 void print_diagonal(int n);

@@ -1,4 +1,4 @@
-#include "main.c"
+#include "main.h"
 
 /**
  * print_chessboard - Print a whole as mf chessboard i guess

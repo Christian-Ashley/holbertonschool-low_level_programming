@@ -20,6 +20,7 @@ files=(
 	"4-strpbrk.c"
 	"5-strstr.c"
 	"0-memset.c"
+	"_putchar.c"
 )
 
 for file in "${files[@]}"

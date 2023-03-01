@@ -4,7 +4,7 @@
  * @d: something about a canine of some sort
  * @name: has your mask consumed your face?
  * @age: maturity is a burden
- * @owner: fate is nothing more than the tendancy for everyone to act according to their nature
+ * @owner: will i ever be free from myself?
  * Return: 0
  */
 

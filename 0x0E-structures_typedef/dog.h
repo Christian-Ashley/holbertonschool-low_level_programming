@@ -2,7 +2,6 @@
 #define DOG_H
 #include <stdio.h>
 #include <stdlib.h>
-void init_dog(struct dog *d, char *name, float age, char *owner);
 /**
  * struct dog - release the dogs of war
  * @name: what do you call yourself?
@@ -16,4 +15,5 @@ typedef struct dog
 	float age;
 	char *owner;
 } my_dog;
+void init_dog(struct dog *d, char *name, float age, char *owner);
 #endif

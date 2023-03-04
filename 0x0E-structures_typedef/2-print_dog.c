@@ -5,7 +5,7 @@
  * Return: void
  */
 
-void print_dog(struct dog *d);
+void print_dog(struct dog *d)
 {
 	if (d == NULL)
 		return;
@@ -13,7 +13,7 @@ void print_dog(struct dog *d);
 	if (d->name == NULL)
 		printf("Name: (nil)\n");
 	else
-		printf("Name: %s\n", d->age);
+		printf("Name: %s\n", d->name);
 
 	if (d->age < 0)
 		printf("Age: (nil)\n");

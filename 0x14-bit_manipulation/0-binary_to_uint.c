@@ -1,25 +1,27 @@
 #include "main.h"
 
 /**
-*binary_to_uint - convert a binary number to an unsigned int
-*@b: string of 0 and 1 characters
-*Return: converted number or 0 on failure
-*/
+ *binary_to_uint - takes binary and makes in an integer
+ *@b: is a letter and is siblings to a
+ *Return: peepeepoopoo
+ */
+
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int index, sum = 0;
+	int index;
+	unsigned int dec_value = 0;
 
-	if (!b)
+	if (b == NULL)
 		return (0);
 
-	for (index = 0; b[index] != '\0'; index++) 
+	for (index = 0; b[index] != '\0'; index++)
 	{
 		if (b[index] == '1')
-			sum = ((2 * sum) + 1);
+			dec_value = ((2 * dec_value) + 1);
 		else if (b[index] == '0')
-			sum = sum * 2;
-		else 
+			dec_value = dec_value * 2;
+		else
 			return (0);
 	}
-	return (sum);
+	return (dec_value);
 }
